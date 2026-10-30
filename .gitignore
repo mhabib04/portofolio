@@ -1,0 +1,9 @@
+node_modules
+dist
+*.local
+*.tsbuildinfo
+.claude
+
+# Dokumen pribadi: jangan sampai ikut ke GitHub atau server
+cv_pas_lamar_rsud.pdf
+public/toefl.pdf
