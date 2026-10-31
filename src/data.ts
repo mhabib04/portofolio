@@ -112,7 +112,7 @@ export const projects: Project[] = [
     title: "Instagaram",
     labels: ["Proyek Pribadi"],
     kind: "mobile",
-    image: "",
+    image: "/instagaram.png",
     summary:
       "Aplikasi media sosial Android bergaya Instagram dengan pesan langsung real-time dan notifikasi push.",
     points: [
@@ -131,7 +131,7 @@ export const projects: Project[] = [
     title: "SPK Pemilihan Sepeda Motor Listrik",
     labels: ["Tugas Akhir", "Terpublikasi di Jurnal"],
     kind: "mobile",
-    image: "",
+    image: "/spk.png",
     summary:
       "Aplikasi Android yang merekomendasikan sepeda motor listrik sesuai preferensi pengguna menggunakan metode Fuzzy AHP-TOPSIS.",
     points: [
@@ -173,11 +173,11 @@ export const education = {
 // Galeri di bawah Pendidikan. Taruh foto di public/galeri lalu ganti image dan label.
 // Gambar Foto 1–5 sekarang hanya contoh sementara.
 export const gallery = [
-  { image: "/galeri/1.svg", label: "Foto 1" },
-  { image: "/galeri/2.svg", label: "Foto 2" },
-  { image: "/galeri/3.svg", label: "Foto 3" },
-  { image: "/galeri/4.svg", label: "Foto 4" },
-  { image: "/galeri/5.svg", label: "Foto 5" },
+  { image: "/galeri/1.jpg", label: "Foto 1" },
+  { image: "/galeri/2.jpg", label: "Foto 2" },
+  { image: "/galeri/3.jpg", label: "Foto 3" },
+  { image: "/galeri/4.jpg", label: "Foto 4" },
+  { image: "/galeri/5.jpg", label: "Foto 5" },
 ];
 
 export const contact = {

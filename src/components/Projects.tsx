@@ -8,16 +8,22 @@ import Wave from "./Wave";
 
 function Thumbnail({ project, featured }: { project: Project; featured?: boolean }) {
   const Icon = project.kind === "web" ? Globe : Smartphone;
+  // Kartu besar di mobile mengikuti rasio asli gambar supaya tidak terpotong
+  const featuredBox = project.image ? "" : "aspect-[16/10] md:aspect-auto";
   return (
     <div
       className={clsx(
         "flex items-center justify-center overflow-hidden border-ink",
-        featured ? "aspect-[16/10] border-b-2 md:aspect-auto md:h-full md:border-r-2 md:border-b-0" : "aspect-[16/9] border-b-2",
+        featured ? `${featuredBox} border-b-2 md:h-full md:border-r-2 md:border-b-0` : "aspect-[16/9] border-b-2",
         project.kind === "web" ? "bg-tile-yellow" : "bg-tile-blue",
       )}
     >
       {project.image ? (
-        <img src={project.image} alt={`Tampilan ${project.title}`} className="h-full w-full object-cover" />
+        <img
+          src={project.image}
+          alt={`Tampilan ${project.title}`}
+          className={featured ? "block h-auto w-full md:h-full md:object-cover" : "h-full w-full object-cover"}
+        />
       ) : (
         <Icon size={featured ? 72 : 56} strokeWidth={1.5} aria-hidden="true" />
       )}

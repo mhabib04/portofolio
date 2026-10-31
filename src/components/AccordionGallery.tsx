@@ -28,6 +28,8 @@ export interface AccordionGalleryProps {
   trigger?: 'hover' | 'click';
   showLabels?: boolean;
   grayscale?: boolean;
+  // Ukuran gambar relatif terhadap panel aktif. 1 = pas, tidak ada bagian terpotong.
+  mediaScale?: number;
   className?: string;
 }
 
@@ -58,6 +60,7 @@ const AccordionGallery = ({
   trigger = 'hover',
   showLabels = true,
   grayscale = true,
+  mediaScale = 1.22,
   className = ''
 }: AccordionGalleryProps) => {
   const rootRef = useRef<HTMLDivElement>(null);
@@ -160,7 +163,7 @@ const AccordionGallery = ({
       const rect = el.getBoundingClientRect();
       const total = vertical ? rect.height : rect.width;
       const usable = Math.max(total - gap * (count - 1), 120);
-      const size = Math.max(140, usable * Math.min(Math.max(expandRatio, 0.2), 0.9) * 1.22);
+      const size = Math.max(140, usable * Math.min(Math.max(expandRatio, 0.2), 0.9) * mediaScale);
       mediaSizeRef.current = size;
       el.style.setProperty('--ag-media-size', `${size}px`);
       applyLayout(!firstRunRef.current);
@@ -170,7 +173,7 @@ const AccordionGallery = ({
     const ro = new ResizeObserver(measure);
     ro.observe(el);
     return () => ro.disconnect();
-  }, [applyLayout, gap, count, expandRatio, vertical]);
+  }, [applyLayout, gap, count, expandRatio, vertical, mediaScale]);
 
   useEffect(() => {
     applyLayout(!firstRunRef.current);
