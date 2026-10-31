@@ -27,12 +27,25 @@ jobs:
       - name: Kirim hasil build ke EC2
         env:
           SSH_KEY: ${{ secrets.EC2_SSH_KEY }}
+          SSH_KEY_B64: ${{ secrets.EC2_SSH_KEY_B64 }}
           EC2_HOST: ${{ secrets.EC2_HOST }}
           EC2_USER: ${{ secrets.EC2_USER }}
         run: |
           mkdir -p ~/.ssh
-          # Buang akhiran baris Windows (\r) yang sering ikut saat kunci disalin
-          printf '%s\n' "$SSH_KEY" | tr -d '\r' > ~/.ssh/deploy_key
+          # Utamakan kunci versi base64 (satu baris, tidak rusak saat disalin)
+          if [ -n "$SSH_KEY_B64" ]; then
+            printf '%s' "$SSH_KEY_B64" | tr -d '\r\n ' | base64 -d > ~/.ssh/deploy_key
+          else
+            # Buang akhiran baris Windows (\r) yang sering ikut saat kunci disalin
+            printf '%s\n' "$SSH_KEY" | tr -d '\r' > ~/.ssh/deploy_key
+          fi
           chmod 600 ~/.ssh/deploy_key
+          # Cek kunci tanpa menampilkan isinya
+          if ssh-keygen -y -f ~/.ssh/deploy_key > /dev/null; then
+            echo "Kunci SSH valid"
+          else
+            echo "Kunci SSH tidak valid: baris pertama berbunyi '$(head -c 36 ~/.ssh/deploy_key)', jumlah baris $(wc -l < ~/.ssh/deploy_key)"
+            exit 1
+          fi
           ssh-keyscan -H "$EC2_HOST" >> ~/.ssh/known_hosts
           rsync -az --delete -e "ssh -i ~/.ssh/deploy_key" dist/ "$EC2_USER@$EC2_HOST:/var/www/portofolio/"
