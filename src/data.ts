@@ -92,7 +92,7 @@ export const projects: Project[] = [
     title: "My Rubel",
     labels: ["Proyek Klien"],
     kind: "web",
-    image: "/myrubel.png",
+    image: "/spk.png",
     summary:
       "Website resmi Bimbel My Rubel Pasaman Barat beserta dua unitnya, Literacy Center dan Motivation & Outbound Center.",
     points: [
