@@ -85,6 +85,7 @@ export const experiences: Experience[] = [
       { src: "/dokumentasi/magang/1.jpg"},
       { src: "/dokumentasi/magang/2.jpg" },
       { src: "/dokumentasi/magang/3.jpg" },
+      { src: "/dokumentasi/magang/4.jpg" },
     ],
   },
 ];
