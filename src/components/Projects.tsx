@@ -5,6 +5,7 @@ import { projects, type Project } from "../data";
 import Reveal from "./Reveal";
 import Tag from "./Tag";
 import Wave from "./Wave";
+import { PhotoButton } from "./Lightbox";
 
 function Thumbnail({ project, featured }: { project: Project; featured?: boolean }) {
   const Icon = project.kind === "web" ? Globe : Smartphone;
@@ -58,8 +59,9 @@ function ProjectBody({ project }: { project: Project }) {
           </Tag>
         ))}
       </div>
-      {links.length > 0 && (
+      {(links.length > 0 || Boolean(project.photos?.length)) && (
         <div className="mt-auto flex flex-wrap gap-3 pt-6">
+          <PhotoButton photos={project.photos} title={project.title} />
           {links.map((link) => (
             <a
               key={link.label}

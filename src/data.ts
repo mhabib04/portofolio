@@ -23,6 +23,10 @@ export const navLinks = [
   { label: "Kontak", href: "#kontak" },
 ];
 
+// Foto dokumentasi untuk tombol "Lihat Foto". Taruh file di public/dokumentasi.
+// caption opsional, tampil di bawah foto.
+export type Photo = { src: string; caption?: string };
+
 export type Experience = {
   title: string;
   org: string;
@@ -31,6 +35,7 @@ export type Experience = {
   end: string;
   points: string[];
   tags: string[];
+  photos?: Photo[];
 };
 
 export const experiences: Experience[] = [
@@ -46,6 +51,12 @@ export const experiences: Experience[] = [
       "Menangani IT Support sehari-hari, meliputi instalasi ulang sistem operasi, penanganan kendala ringan printer, serta penyiapan perangkat pendukung kegiatan",
     ],
     tags: ["SIMGOS", "PHP", "MySQL", "FileZilla", "IT Support"],
+    // Contoh: { src: "/dokumentasi/rsud/1.jpg", caption: "Instalasi sistem antrean apotek" }
+    photos: [
+      { src: "/dokumentasi/rsud/1.jpg"},
+      { src: "/dokumentasi/rsud/2.jpg" },
+      { src: "/dokumentasi/rsud/3.jpg" },
+    ],
   },
   {
     title: "Pengelola Media Sosial dan Website",
@@ -70,6 +81,7 @@ export const experiences: Experience[] = [
       "Menangani IT Support untuk karyawan, meliputi penanganan kendala ringan komputer, laptop, dan printer, instalasi perangkat lunak, serta pengoperasian perangkat Starlink dan perangkat presentasi",
     ],
     tags: ["Kotlin", "Android", "IT Support"],
+    photos: [],
   },
 ];
 
@@ -85,6 +97,7 @@ export type Project = {
   points: string[];
   tags: string[];
   links: ProjectLink[];
+  photos?: Photo[];
 };
 
 export const projects: Project[] = [
@@ -107,6 +120,7 @@ export const projects: Project[] = [
       { label: "literacy", href: "https://literacy.myrubel.com" },
       { label: "motivation", href: "https://motivation.myrubel.com" },
     ],
+    photos: [],
   },
   {
     title: "Instagaram",
@@ -124,7 +138,10 @@ export const projects: Project[] = [
     tags: ["Java", "Firestore", "FCM", "Cloudinary", "AWS Lambda"],
     links: [
       { label: "GitHub", href: "https://github.com/mhabib04/Instagaram" },
-      { label: "Unduh APK", href: "https://github.com/mhabib04/Instagaram/releases/download/v1.0.0/Instagaram.apk" },
+      {
+        label: "Unduh APK",
+        href: "https://github.com/mhabib04/Instagaram/releases/download/v1.0.0/Instagaram.apk",
+      },
     ],
   },
   {
@@ -141,8 +158,14 @@ export const projects: Project[] = [
     ],
     tags: ["Kotlin", "Firebase", "Fuzzy AHP", "TOPSIS"],
     links: [
-      { label: "GitHub", href: "https://github.com/mhabib04/SPKMotorListrik.git" },
-      { label: "Unduh APK", href: "https://github.com/mhabib04/SPKMotorListrik/releases/download/v1.0.0/spk_motor_listrik.apk" },
+      {
+        label: "GitHub",
+        href: "https://github.com/mhabib04/SPKMotorListrik.git",
+      },
+      {
+        label: "Unduh APK",
+        href: "https://github.com/mhabib04/SPKMotorListrik/releases/download/v1.0.0/spk_motor_listrik.apk",
+      },
       { label: "Baca jurnal", href: "https://doi.org/10.47065/tin.v7i1.10260" },
     ],
   },

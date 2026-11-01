@@ -1,6 +1,7 @@
 import { experiences } from "../data";
 import Reveal from "./Reveal";
 import Tag from "./Tag";
+import { PhotoButton } from "./Lightbox";
 
 export default function Experience() {
   return (
@@ -47,6 +48,11 @@ export default function Experience() {
                     <Tag key={tag}>{tag}</Tag>
                   ))}
                 </div>
+                {exp.photos?.length ? (
+                  <div className="mt-5">
+                    <PhotoButton photos={exp.photos} title={exp.title} />
+                  </div>
+                ) : null}
               </Reveal>
             </li>
           );
