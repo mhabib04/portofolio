@@ -162,10 +162,10 @@ export const education = {
   period: "2022 – 2026",
   degree: "Sarjana Teknik (S.T.), Program Studi Teknik Informatika",
   degreeShort: "S.T., Teknik Informatika",
-  gpa: "IPK 3,70/4,00",
+  gpa: "IPK 3,70/4,00 (Predikat Cumlaude)",
   thesis:
     "Sistem Pendukung Keputusan Pemilihan Sepeda Motor Listrik Menggunakan Fuzzy AHP-TOPSIS dengan Pendekatan User-Driven",
-  journal: "TIN: Terapan Informatika Nusantara, Vol. 7 No. 1 (2026)",
+  journal: "TIN: Terapan Informatika Nusantara (Sinta 4), Vol. 7 No. 1 (2026)",
   journalShort: "TIN Vol. 7 No. 1 (2026)",
   journalUrl: "https://doi.org/10.47065/tin.v7i1.10260",
 };
