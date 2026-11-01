@@ -137,7 +137,7 @@ export const projects: Project[] = [
     points: [
       "Menyederhanakan 21 perbandingan berpasangan menjadi 7 slider preferensi",
       "Membandingkan 23 motor listrik dari dealer resmi di Pekanbaru berdasarkan 7 kriteria",
-      "Dipublikasikan di jurnal TIN: Terapan Informatika Nusantara(SINTA 4), 2026",
+      "Dipublikasikan di jurnal TIN: Terapan Informatika Nusantara (SINTA 4), 2026",
     ],
     tags: ["Kotlin", "Firebase", "Fuzzy AHP", "TOPSIS"],
     links: [
