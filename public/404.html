@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <title>Halaman tidak ditemukan · Muhammad Habib</title>
+    <link rel="icon" type="image/png" href="/icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,800&family=Nunito:wght@400;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --background: hsl(48, 100%, 96%);
+        --foreground: hsl(228, 40%, 14%);
+        --primary: hsl(46, 100%, 58%);
+        --blue: hsl(226, 80%, 52%);
+        --paper: hsl(48, 100%, 99%);
+        --muted-foreground: hsl(228, 12%, 40%);
+        --border: hsl(228, 40%, 14%);
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 24px 16px;
+        background: var(--primary);
+        color: var(--foreground);
+        font-family: "Nunito", system-ui, sans-serif;
+        font-size: 17px;
+        line-height: 1.6;
+        text-align: center;
+      }
+      main {
+        max-width: 560px;
+      }
+      .code {
+        margin: 0;
+        font-family: "Bricolage Grotesque", system-ui, sans-serif;
+        font-weight: 800;
+        font-size: clamp(96px, 24vw, 200px);
+        line-height: 0.9;
+        letter-spacing: -0.04em;
+      }
+      h1 {
+        margin: 16px 0 0;
+        font-family: "Bricolage Grotesque", system-ui, sans-serif;
+        font-weight: 800;
+        font-size: clamp(28px, 5vw, 40px);
+        line-height: 1.1;
+      }
+      p {
+        margin: 12px 0 0;
+      }
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        margin-top: 32px;
+        min-height: 44px;
+        padding: 0.85rem 1.4rem;
+        border: 2px solid var(--border);
+        border-radius: 999px;
+        box-shadow: 4px 4px 0 var(--border);
+        background: var(--blue);
+        color: var(--paper);
+        font-weight: 800;
+        font-size: 15px;
+        line-height: 1;
+        text-decoration: none;
+        transition: transform 120ms ease, box-shadow 120ms ease;
+      }
+      .btn:hover {
+        transform: translate(-2px, -2px);
+        box-shadow: 6px 6px 0 var(--border);
+      }
+      .btn:active {
+        transform: translate(4px, 4px);
+        box-shadow: 0 0 0 var(--border);
+      }
+      .btn:focus-visible {
+        outline: 3px solid var(--paper);
+        outline-offset: 3px;
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .btn,
+        .btn:hover,
+        .btn:active {
+          transition: none;
+          transform: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p class="code" aria-hidden="true">404</p>
+      <h1>Halaman tidak ditemukan</h1>
+      <p>Alamat yang kamu buka tidak ada atau sudah dipindahkan.</p>
+      <a class="btn" href="/">Kembali ke beranda</a>
+    </main>
+  </body>
+</html>
