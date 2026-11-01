@@ -6,7 +6,7 @@ export const profile = {
   name: "Muhammad Habib",
   role: "IT & Software Developer",
   description:
-    "Lulusan Teknik Informatika UIN Sultan Syarif Kasim Riau tahun 2026. Saat ini bekerja sebagai Pengelola Data dan Informasi di RSUD Pasaman Barat, dengan tanggung jawab mengelola SIMRS, mengembangkan sistem internal, dan memberikan dukungan teknis. Berpengalaman mengembangkan aplikasi Android dengan Kotlin serta aplikasi web dengan Laravel.",
+    "Lulusan Teknik Informatika UIN Sultan Syarif Kasim Riau tahun 2026. Saat ini bekerja sebagai Pengelola Data dan Informasi di RSUD Pasaman Barat, dengan tanggung jawab mengelola SIMRS, mengembangkan sistem internal, dan menangani IT Support. Berpengalaman mengembangkan aplikasi Android dengan Kotlin serta aplikasi web dengan Laravel.",
   // Taruh foto di folder public, lalu isi misalnya "/foto.jpg"
   photo: "/foto.jpg",
   // Taruh CV di folder public dengan nama cv.pdf
@@ -43,7 +43,7 @@ export const experiences: Experience[] = [
     points: [
       "Mengelola dan memelihara SIMRS (SIMGOS Kemenkes) yang digunakan untuk operasional layanan rumah sakit",
       "Mengembangkan sistem pemanggilan antrean apotek berbasis web dengan PHP native untuk menggantikan pemanggilan manual menggunakan mikrofon",
-      "Memberikan dukungan IT sehari-hari, meliputi instalasi ulang sistem operasi, penanganan kendala ringan printer, serta penyiapan perangkat pendukung kegiatan",
+      "Menangani IT Support sehari-hari, meliputi instalasi ulang sistem operasi, penanganan kendala ringan printer, serta penyiapan perangkat pendukung kegiatan",
     ],
     tags: ["SIMGOS", "PHP", "MySQL", "FileZilla", "IT Support"],
   },
@@ -67,7 +67,7 @@ export const experiences: Experience[] = [
     points: [
       "Mengembangkan aplikasi Android dengan Kotlin untuk pencatatan surat perusahaan dan pemantauan masa berlaku dokumen",
       "Terlibat dalam analisis kebutuhan, pengembangan, dan pengujian aplikasi",
-      "Memberikan dukungan IT kepada karyawan, meliputi penanganan kendala ringan komputer, laptop, dan printer, instalasi perangkat lunak, serta pengoperasian perangkat Starlink dan perangkat presentasi",
+      "Menangani IT Support untuk karyawan, meliputi penanganan kendala ringan komputer, laptop, dan printer, instalasi perangkat lunak, serta pengoperasian perangkat Starlink dan perangkat presentasi",
     ],
     tags: ["Kotlin", "Android", "IT Support"],
   },
