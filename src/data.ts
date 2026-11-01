@@ -81,7 +81,11 @@ export const experiences: Experience[] = [
       "Menangani IT Support untuk karyawan, meliputi penanganan kendala ringan komputer, laptop, dan printer, instalasi perangkat lunak, serta pengoperasian perangkat Starlink dan perangkat presentasi",
     ],
     tags: ["Kotlin", "Android", "IT Support"],
-    photos: [],
+    photos: [
+      { src: "/dokumentasi/magang/1.jpg"},
+      { src: "/dokumentasi/magang/2.jpg" },
+      { src: "/dokumentasi/magang/3.jpg" },
+    ],
   },
 ];
 
