@@ -137,7 +137,7 @@ export const projects: Project[] = [
     points: [
       "Menyederhanakan 21 perbandingan berpasangan menjadi 7 slider preferensi",
       "Membandingkan 23 motor listrik dari dealer resmi di Pekanbaru berdasarkan 7 kriteria",
-      "Dipublikasikan di jurnal TIN: Terapan Informatika Nusantara (2026)",
+      "Dipublikasikan di jurnal TIN: Terapan Informatika Nusantara(SINTA 4), 2026",
     ],
     tags: ["Kotlin", "Firebase", "Fuzzy AHP", "TOPSIS"],
     links: [
@@ -165,8 +165,8 @@ export const education = {
   gpa: "IPK 3,70/4,00 (Predikat Cumlaude)",
   thesis:
     "Sistem Pendukung Keputusan Pemilihan Sepeda Motor Listrik Menggunakan Fuzzy AHP-TOPSIS dengan Pendekatan User-Driven",
-  journal: "TIN: Terapan Informatika Nusantara (Sinta 4), Vol. 7 No. 1 (2026)",
-  journalShort: "TIN Vol. 7 No. 1 (2026)",
+  journal: "TIN: Terapan Informatika Nusantara (SINTA 4), Vol. 7 No. 1 (2026)",
+  journalShort: "TIN Vol. 7 No. 1 (2026), SINTA 4",
   journalUrl: "https://doi.org/10.47065/tin.v7i1.10260",
 };
 
