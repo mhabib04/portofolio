@@ -52,16 +52,16 @@ function ProjectBody({ project }: { project: Project }) {
           </li>
         ))}
       </ul>
-      <div className="mt-4 flex flex-wrap gap-2">
+      <div className="mt-4 flex flex-wrap items-center gap-x-2 gap-y-3">
         {project.tags.map((tag) => (
           <Tag key={tag} className="bg-background">
             {tag}
           </Tag>
         ))}
+        <PhotoButton photos={project.photos} title={project.title} />
       </div>
-      {(links.length > 0 || Boolean(project.photos?.length)) && (
+      {links.length > 0 && (
         <div className="mt-auto flex flex-wrap gap-3 pt-6">
-          <PhotoButton photos={project.photos} title={project.title} />
           {links.map((link) => (
             <a
               key={link.label}

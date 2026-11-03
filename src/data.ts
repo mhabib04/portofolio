@@ -125,7 +125,9 @@ export const projects: Project[] = [
       { label: "literacy", href: "https://literacy.myrubel.com" },
       { label: "motivation", href: "https://motivation.myrubel.com" },
     ],
-    photos: [],
+    photos: [
+      { src: "/dokumentasi/myrubel/1.jpg"},
+    ],
   },
   {
     title: "Instagaram",
