@@ -6,13 +6,13 @@ export const profile = {
   name: "Muhammad Habib",
   role: "IT & Software Developer",
   description:
-    "Lulusan Teknik Informatika UIN Sultan Syarif Kasim Riau tahun 2026. Saat ini bekerja sebagai Pengelola Data dan Informasi di RSUD Pasaman Barat, dengan tanggung jawab mengelola SIMRS, mengembangkan sistem internal, dan menangani IT Support. Berpengalaman mengembangkan aplikasi Android dengan Kotlin serta aplikasi web dengan Laravel.",
+    "Lulusan Teknik Informatika UIN Sultan Syarif Kasim Riau tahun 2026. Saat ini bekerja sebagai Pengolah Data dan Informasi & Programmer di RSUD Pasaman Barat, dengan tanggung jawab mengelola SIMRS, mengembangkan sistem internal, dan menangani IT Support. Berpengalaman mengembangkan aplikasi Android dengan Kotlin serta aplikasi web dengan Laravel.",
   // Taruh foto di folder public, lalu isi misalnya "/foto.jpg"
   photo: "/foto.jpg",
   // Taruh CV di folder public dengan nama cv.pdf
   cv: "/cv.pdf",
   email: "mhabib180404@gmail.com",
-  linkedin: "https://www.linkedin.com/in/muhammad-habib-890141387",
+  linkedin: "https://www.linkedin.com/in/mhabib04",
   github: "https://github.com/mhabib04",
 };
 
@@ -40,7 +40,7 @@ export type Experience = {
 
 export const experiences: Experience[] = [
   {
-    title: "Pengelola Data dan Informasi",
+    title: "Pengolah Data dan Informasi & Programmer",
     org: "RSUD Pasaman Barat",
     type: "Pegawai Kontrak",
     start: "Agustus 2026",
@@ -50,7 +50,7 @@ export const experiences: Experience[] = [
       "Mengembangkan sistem pemanggilan antrean apotek berbasis web dengan PHP native untuk menggantikan pemanggilan manual menggunakan mikrofon",
       "Menangani IT Support sehari-hari, meliputi instalasi ulang sistem operasi, penanganan kendala ringan printer, serta penyiapan perangkat pendukung kegiatan",
     ],
-    tags: ["SIMGOS", "PHP", "MySQL", "FileZilla", "IT Support"],
+    tags: ["SIMGOS", "PHP", "MySQL", "IT Support"],
     // Contoh: { src: "/dokumentasi/rsud/1.jpg", caption: "Instalasi sistem antrean apotek" }
     photos: [
       { src: "/dokumentasi/rsud/1.jpg"},
@@ -183,7 +183,7 @@ export const skillRows: string[][] = [
   ["Kotlin", "Java", "Firebase"],
   ["Laravel", "PHP", "MySQL", "WordPress", "HTML/CSS"],
   ["SIMRS (SIMGOS)", "IT Support"],
-  ["Git", "GitHub", "FileZilla", "Canva"],
+  ["Git", "GitHub", "Canva"],
 ];
 
 export const education = {
