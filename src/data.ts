@@ -63,7 +63,7 @@ export const experiences: Experience[] = [
     org: "Prodi Hukum Tata Negara, UIN Suska Riau",
     type: "Freelance",
     start: "Juli 2026",
-    end: "Agustus 2026",
+    end: "",
     points: [
       "Mengelola dan mempublikasikan konten Prodi HTN melalui website (WordPress) dan Instagram",
     ],
