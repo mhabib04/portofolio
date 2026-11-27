@@ -52,11 +52,11 @@ export const experiences: Experience[] = [
     ],
     tags: ["SIMGOS", "PHP", "MySQL", "IT Support"],
     // Contoh: { src: "/dokumentasi/rsud/1.jpg", caption: "Instalasi sistem antrean apotek" }
-    photos: [
-      { src: "/dokumentasi/rsud/1.jpg"},
-      { src: "/dokumentasi/rsud/2.jpg" },
-      { src: "/dokumentasi/rsud/3.jpg" },
-    ],
+    // photos: [
+    //   { src: "/dokumentasi/rsud/1.jpg"},
+    //   { src: "/dokumentasi/rsud/2.jpg" },
+    //   { src: "/dokumentasi/rsud/3.jpg" },
+    // ],
   },
   {
     title: "Pengelola Media Sosial dan Website",
